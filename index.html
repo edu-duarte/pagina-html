@@ -16,15 +16,39 @@
 </head>
 
 <body>
-    <!-- Cabeçalho-->
+
+    <!-- Cabeçalho -->
     <header>
 
         <img src="logotipo.jpg" alt="Logo da Empresa" logo="Logo da Empresa" />
 
     </header>
-    <!-- Fim do Cabeçalho-->
+    <!-- Fim do Cabeçalho -->
 
     <!-- Conteúdo Principal-->
+    <!-- Testes DOM-->
+    <p id="article">
+        Testando cores com o java.
+    </p>
+    <p id="article2">
+        Testando cores com o java.
+    </p>
+    <script type="text/javascript">
+        document.getElementById("article").style.color = "blue"
+    </script>
+    <script type="text/javascript">
+        document.getElementById("article2").style.color = "red"
+    </script>
+
+<button id="botao1" onclick="atualizacao()">Atualização de texto</button>
+<script type="text/javascript">
+function atualizacao() {
+    var article = document.getElementById("article");
+    
+    article.innerText = "Novo texto que iá aparecer";
+}
+</script>
+    <!-- Fim dos Testes DOM -->
     <main>
         <section>
             <div class="bloco 1 videos" id="div1">
@@ -121,27 +145,27 @@
                 <option value="1"> Vendas </option>
                 <option value="2"> Marketing </option>
             </select>
-<fieldset>
+            <fieldset>
 
 
-            <legend>Intereses de Estudo 2</legend>
-            <label for="campo3">Vendas</label>
-            <input type="radio" name="Interesse 2" value="1" id="campo3"/>
-            <label for="campo4">Marketing</label>
-            <input type="radio" name="Interesse 2" value="1" id="campo4"/>
-        </fieldset>
+                <legend>Intereses de Estudo 2</legend>
+                <label for="campo3">Vendas</label>
+                <input type="radio" name="Interesse 2" value="1" id="campo3" />
+                <label for="campo4">Marketing</label>
+                <input type="radio" name="Interesse 2" value="1" id="campo4" />
+            </fieldset>
 
-        <fieldset>  
-            <legend>Intereses de Estudo 3</legend>        
-            <label for="campo5">Vendas</label>
-            <input type="checkbox" name="Interesse 2" value="1" id="campo5"/>
-            <label for="campo6">Marketing</label>
-            <input type="checkbox" name="Interesse 2" value="1" id="campo6"/>
-        </fieldset>
+            <fieldset>
+                <legend>Intereses de Estudo 3</legend>
+                <label for="campo5">Vendas</label>
+                <input type="checkbox" name="Interesse 2" value="1" id="campo5" />
+                <label for="campo6">Marketing</label>
+                <input type="checkbox" name="Interesse 2" value="1" id="campo6" />
+            </fieldset>
             <input type="submit" value="Enviar o formulário" />
 
         </form>
-    
+
         <!-- Formulário -->
 
         <!-- Títulos em HTML -->
