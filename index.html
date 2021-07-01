@@ -1,55 +1,179 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-        <title> Página para Exercícios HTML | Gama Academy </title>
-        <meta charset="UTF-8" />
-        <meta name="description" content="Texto descritivo da página web" />
-        <meta name="author" content="Eduardo/Gama Academy" />
-        <meta name="viewport" content="width=device-widtch, initial-scale=1.0"/> 
-    
-        <link rel="stylesheet" type="text/css" href="estilo.css" />
+<head>
 
-        <script type="text/javascript" src="script.js"> </script>
+    <title> Página para Exercícios HTML | Gama Academy </title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Texto descritivo da página web" />
+    <meta name="author" content="Eduardo/Gama Academy" />
+    <meta name="viewport" content="width=device-widtch, initial-scale=1.0" />
 
-    </head>
-    <body>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+
+    <script type="text/javascript" src="script.js"> </script>
+
+</head>
+
+<body>
     <!-- Cabeçalho-->
     <header>
-        <!-- Fim do Cabeçalho-->
-    
-        <!-- Conteúdo Principal-->
+
+        <img src="logotipo.jpg" alt="Logo da Empresa" logo="Logo da Empresa" />
+
     </header>
+    <!-- Fim do Cabeçalho-->
+
+    <!-- Conteúdo Principal-->
     <main>
+        <section>
+            <div class="bloco 1 videos" id="div1">
+                <!-- Vídeos -->
+                <video width="550" height="560" controls>
+                    <source src="" type="video/mp4" />
+                </video>
+                <!-- Fim dos Vídeos -->
+            </div>
+        </section>
+
+        <section>
+
+            <div class="bloco 2 listas" id="div2">
+                <!-- Lista Desordenada -->
+                <ul type="circle">
+                    <li> Item 1</li>
+                    <li> Item 2</li>
+                </ul>
+
+                <!-- Fim da Lista Desordenada Numerada -->
+
+                <!-- Lista Ordenada -->
+                <ol start="3" type="1">
+                    <li> Item 1</li>
+                    <li> Item 2</li>
+                </ol>
+                <!-- Fim da Lista Ordenada Numerada -->
+
+                <!-- Lista Ordenada Alfabética -->
+                <ol start="1" type="A">
+                    <li> Item 1</li>
+                    <li> Item 2</li>
+                </ol>
+                <!-- Fim da Lista Ordenada Alfabética -->
+
+                <!-- Lista de Definições -->
+                <dl>
+                    <dt> Palavra 1</dt>
+                    <dd> Explicação da Palavra 1</dd>
+                </dl>
+
+                <!-- Fim da Lista de Definições -->
+            </div>
+        </section>
+        <section>
+
+            <div class="bloco 3 tabelas" id="div3">
+                <!-- Tabelas -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mês da Atividade</th>
+                            <th>Nome da Atividade</th>
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+                        <tr>
+                            <td colspan="1">Janeiro</td> <!-- colspan serve para mostrar quantas colunas são usadas -->
+                            <td>Leitura</td>
+                        </tr>
+                        <tr>
+                            <td>Fevereiro</td>
+                            <td rowspan="1">Meditação</td> <!-- rowspan serve para mostrar quantas linhas são usadas -->
+                        </tr>
+                        <tr>
+                            <td>Março</td>
+                            <td rowspan="1">Natação</td> <!-- rowspan serve para mostrar quantas linhas são usadas -->
+                        </tr>
+                    </tbody>
+
+
+                    <tfoot>
+                        <tr>
+                            <td>Total de Atividades</td>
+                            <td>2 Atividades</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- Fim das Tabelas -->
+            </div>
+        </section>
+        <!-- Formulário -->
+        <form action="#" method="POST">
+
+            <label for="campo1">Nome</label>
+            <input type="text" name="Nome" id="campo1" />
+            <!-- id interage com o for, serve para clicar no Nome e o mouse já ir para a caixa de texto -->>
+
+            <label for="campo2">Intereses de Estudo</label>
+            <select name="Interesses" id="campo2">
+                <option value="1"> Vendas </option>
+                <option value="2"> Marketing </option>
+            </select>
+<fieldset>
+
+
+            <legend>Intereses de Estudo 2</legend>
+            <label for="campo3">Vendas</label>
+            <input type="radio" name="Interesse 2" value="1" id="campo3"/>
+            <label for="campo4">Marketing</label>
+            <input type="radio" name="Interesse 2" value="1" id="campo4"/>
+        </fieldset>
+
+        <fieldset>  
+            <legend>Intereses de Estudo 3</legend>        
+            <label for="campo5">Vendas</label>
+            <input type="checkbox" name="Interesse 2" value="1" id="campo5"/>
+            <label for="campo6">Marketing</label>
+            <input type="checkbox" name="Interesse 2" value="1" id="campo6"/>
+        </fieldset>
+            <input type="submit" value="Enviar o formulário" />
+
+        </form>
     
+        <!-- Formulário -->
+
         <!-- Títulos em HTML -->
         <h1> Terra </h1>
-            <p>Teste 1</p>
-            <a href="https://google.com" title="Site do Google" target="_blank">
-                Teste do meu link
-            </a>
-        <h2> América do Sul </h2>
-            <p>Teste 2 - <a href="https://google.com" title="Saber mais pesquisando" target="_blank"> Clique para saber mais </a> </p>
-        <h3> Brasil </h3>
-            <p>Teste 3</p>
+        <p>Teste 1</p>
         <a href="https://google.com" title="Site do Google" target="_blank">
-                <img src="mapadobrasil.jpg"> 
-            </a>
+            Teste do meu link
+        </a>
+        <h2> América do Sul </h2>
+        <p>Teste 2 - <a href="https://google.com" title="Saber mais pesquisando" target="_blank"> Clique para saber mais
+            </a> </p>
+        <h3> Brasil </h3>
+        <p>Teste 3</p>
+        <a href="https://google.com" title="Site do Google" target="_blank">
+            <img src="mapadobrasil.jpg">
+        </a>
         <h4> Distrito Federal </h4>
-            <p>Teste 4</p>
+        <p>Teste 4</p>
         <h5> Brasília </h5>
-            <p>Teste 5</p>
+        <p>Teste 5</p>
         <h6> Guará </h6>
-            <p>Teste <strong>6</strong></p>
+        <p>Teste <strong>6</strong></p>
     </main>
-    
+
     <!-- Fim do Conteúdo Principal-->
-    
+
     <!-- Rodapé-->
-    
+
     <footer>
-    
+
     </footer>
     <!-- Fim do Rodapé-->
-    </body>
+</body>
+
 </html>
